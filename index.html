@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Mezzway</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+	<body>
+       <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="about.html">2</a>
+            <a href="bounty.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="faq.html">5</a>
+            <a href="a-index.html">6</a>
+            <a href="a-history.html">7</a>
+            <a href="a-banner.html">8</a>
+            <a href="a-open-deposits.html">9</a>
+            <a href="a-referal.html">10</a>
+            <a href="a-settings.html">11</a>
+            <a href="a-withdraw.html">12</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+       <div id="loader">
+            <div id="cube-loader">
+                <div class="caption">
+                  <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
+                 </div>
+              </div>
+           </div>
+        </div><!--/Loader-->
+        
+        
+		<div id="wrapper">
+        	<header>
+                <div id="particles-background" class="vertical-centered-box"></div>
+                <div id="particles-foreground" class="vertical-centered-box"></div>
+                <div class="container">
+                    <div class="top flex">
+                        <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                        <nav class="nav">
+                            <a class="cd-nav-trigger scale">
+                                <div class="hamburger-menu menu-toggle">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </a>
+                            <div class="menu">
+                                <ul class="sliding-menu">
+                                    <li class="active"><a href="#">О нас</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Bounty</a></li>
+                                    <li class="margin-r-0"><a href="#">Контакты</a></li>
+                                </ul>
+                                <div class="register-login">
+                                    <a href="#" id="login" class="btn btn-2 modal-block"><span>Вход</span></a>
+                                    <a href="#" id="registration" class="btn modal-block"><span>Регистрация</span></a>
+                                </div><!--/register-login-->
+                            </div>
+                        </nav> 
+                        <div class="register-login">
+                            <a href="#" id="login" class="btn btn-2 modal-block"><span>Вход</span></a>
+                            <a href="#" id="registration" class="btn modal-block"><span>Регистрация</span></a>
+                        </div><!--/register-login-->
+                    </div><!--/top-->
+				</div><!--/container-->
+                <div class="middle">
+                    <div class="container flex">
+                        <div class="language">
+                            <a href="#" ><img src="img/en.png" alt=""/></a>
+                            <a href="#" class="active"><img src="img/ru.png" alt=""/></a>    
+                        </div><!--/language-->
+                        <div class="bonus">
+                            <div class="title">Бонус за регистрацию 0.1$<img src="img/ico/arrow.png" alt=""/></div>
+                            <ul class="social-networks">
+                                <li><a href="#"><img src="img/social/facebook.png" alt="facebook"/></a></li>
+                                <li><a href="#"><img src="img/social/telegram.png" alt="telegram"/></a></li>
+                                <li><a href="#"><img src="img/social/twitter.png" alt="twitter"/></a></li>
+                                <li><a href="#"><img src="img/social/vk.png" alt="vk"/></a></li>
+                                <li><a href="#"><img src="img/social/skype.png" alt="skype"/></a></li>
+                            </ul>
+                        </div>
+                    </div><!--/container-->
+                </div><!--/middle-->
+                <div class="container">
+                    <div class="bottom flex">
+                        <div class="left-block">
+                            <div class="txt">
+                                <div class="title"><h1>Инвестиционный инструмент будущего</h1></div>
+                                <div class="flex">
+                                    <div class="item">
+                                        <div class="img"><img src="img/ico/arrow2.png" alt=""/></div>
+                                        <div class="title">Мгновенные  выплаты</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img"><img src="img/ico/arrow2.png" alt=""/></div>
+                                        <div class="title">Автомазированная система</div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="img"><img src="img/ico/arrow2.png" alt=""/></div>
+                                        <div class="title">Высокий  доход</div>
+                                    </div>
+                                    <div class="item num-grad">
+                                        <div class="img">6389</div>
+                                        <div class="title">Участников</div>
+                                    </div>
+                                    <div class="item num-grad">
+                                        <div class="img">25+ BTC</div>
+                                        <div class="title">Инвестировано</div>
+                                    </div>
+                                    <div class="item num-grad">
+                                        <div class="img">26</div>
+                                        <div class="title">Дней компании</div>
+                                    </div>
+                                </div><!--/flex-->
+                            </div>
+                        </div>
+                        <div class="right-block">
+                            <div class="recent-operations">
+                                <div class="box-shadow"></div>
+                                <div class="bg">
+                                    <div class="title">Последние операции</div>
+                                    <div class="recent-operations-block">
+                                        <div class="item flex">
+                                            <div class="arrow down"><img src="img/ico/arrow-down.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">- 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/bitcoin.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow"><img src="img/ico/arrow-up.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">+ 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/ADVCASH.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow down"><img src="img/ico/arrow-down.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">- 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/ETH.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow"><img src="img/ico/arrow-up.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">+ 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/LTC.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow"><img src="img/ico/arrow-up.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">+ 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/PAYER.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow"><img src="img/ico/arrow-up.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">+ 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/PM.png" alt=""/></div>
+                                        </div><!--/item-->
+                                        <div class="item flex">
+                                            <div class="arrow down"><img src="img/ico/arrow-down.png" alt=""/></div>
+                                            <div class="txt">
+                                                <div class="title">Mr.Joposran4ik</div>
+                                                <div class="number">- 09384 USD</div>
+                                            </div> 
+                                            <div class="ps"><img src="img/ps/bitcoin.png" alt=""/></div>
+                                        </div><!--/item-->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--/bottom-->
+                </div><!--/container-->
+                <div id="bonus" class="flex">
+                    <div class="img"><img src="img/ico/gift.png" alt=""/></div>
+                    <div class="title">
+                        <span>Регистрируйся и получи бонус</span>
+                        <p>Призовой фонд <span class="bold">2 BTC</span></p>
+                    </div>
+                    <a href="#" class="btn"><span>Получить бонус</span></a>
+                </div>
+			</header>
+            
+            <section id="calculator">
+            	<div class="container">
+                    <div class="title"><h2>Выберите тариф</h2></div>
+                    <div id="calculator-block" class="c-tab-1">
+                        <ul class="c-tab" data-aos-delay="200" data-aos-once="true" data-aos="fade-right">
+                            <li id="c-tab-1" class="active">
+                                <div class="flex">
+                                    <p><span class="number">10%</span><span class="info">за 24 часа</span></p>
+                                    <ul>
+                                        <li>Начисления каждый час</li>
+                                        <li>Депозит включен</li>
+                                        <li>1$-500$</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li id="c-tab-2">
+                                <div class="flex">
+                                    <p><span class="number">30%</span><span class="info">за 48 часа</span></p>
+                                    <ul>
+                                        <li>Начисления каждую минуту</li>
+                                        <li>Депозит включен</li>
+                                        <li>1000$-5000$</li>
+                                    </ul>
+                                </div>
+                           </li>
+                           <li id="c-tab-3">
+                                <div class="flex">
+                                    <p><span class="number">50%</span><span class="info">за 72 часа</span></p>
+                                    <ul>
+                                        <li>Начисления каждую секунду</li>
+                                        <li>Депозит включен</li>
+                                        <li>2500-20000$</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="content" data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
+                            <div id="c-top">
+                                <div id="tit-calc">10%</div>
+                                <span id="info-calc">за 24 часа</span>
+                            </div><!--#c-top-->
+                            <div id="c-bottom">
+                                <div class="flex">
+                                    <div class="left-block">
+                                    	<div class="top">
+                                            <div class="item txt-1">
+                                                <p>На бессрочной основе 2.5% в день</p>
+                                                <p>Выход в безубыток через 40 дней </p>
+                                                <p>Начисления каждый день</p>
+                                                <p>От 5$ до 499$ </p>
+                                                <p>Возможность снять депозит в течение 24 часов</p>
+                                            </div>
+                                            <div class="item txt-2">
+                                                <p>На бессрочной основе 3% в день</p>
+                                                <p>Выход в безубыток через 33 дня </p>
+                                                <p>Начисления каждый час</p>
+                                                <p>От 500$ до 1999$</p>
+                                                <p>Возможность снять депозит в течение 24 часов</p>
+                                            </div>
+                                            <div class="item txt-3">
+                                                <p>На бессрочной основе 4% в день</p>
+                                                <p>Выход в безубыток через 25 дня </p>
+                                                <p>Начисления каждую минуту</p>
+                                                <p>От 2000$ до 10000$</p>
+                                                <p>Возможность снять депозит в течение 24 часов</p>
+                                            </div>
+                                        </div><!--top-->
+                                        <div class="ps-little">
+                                            <div class="img"><img src="ps-little/logo-advcash.png" alt=""/></div>
+                                            <div class="img"><img src="ps-little/logo-btc.png" alt=""/></div>
+                                            <div class="img"><img src="ps-little/logo-eth.png" alt=""/></div>
+                                            <div class="img"><img src="ps-little/logo-ltc.png" alt=""/></div>
+                                            <div class="img"><img src="ps-little/logo-payer.png" alt=""/></div>
+                                            <div class="img"><img src="ps-little/logo-PM.png" alt=""/></div>
+                                        </div>
+                                    </div>
+                                    <div class="right-block">
+                                    	<div class="top-block">
+                                            <span>Сумма вклада</span>
+                                            <input id="c-input" value="" type="text" class="input-form" onFocus="value=''"/> 
+                                        </div><!--/top-block-->
+                                        <div class="bottom-block">
+                                            <div class="top flex">
+                                                <div class="item">
+                                                    <span id="minutely">0$</span> 
+                                                    <div class="title">Доход в минуту</div>
+                                                </div>
+                                                <div class="item">
+                                                    <span id="diurnal">0$</span> 
+                                                    <div class="title">Доход в сутки</div>
+                                                </div>
+                                            </div><!--/top-->
+                                            <div class="bottom">
+                                                <a href="#" class="btn">Открыть депозит</a> 
+                                            </div><!--/bottom-->
+                                        </div><!--/bottom-block-->
+                                    </div>
+                                </div>
+                            </div><!--#c-bottom-->
+                            
+                            <script type="text/javascript">
+								$(document).on("ready", function () {
+									var titcalc = document.getElementById('tit-calc');
+									var infocalc = document.getElementById('info-calc');
+									
+									$("#calculator-block .c-tab>li").click(function () {
+									   var txt = $(this).find(".number").text();
+									   var info = $(this).find(".info").text();
+									   titcalc.innerHTML = txt;
+									   infocalc.innerHTML = info;
+									});	
+								});
+							</script>
+                            
+                        </div><!--/content-->
+                	</div><!--/calculator-block-->
+                </div><!--container-->
+            </section>
+            
+            <section id="about" data-aos="fade-up">
+                <div class="container">
+                	<div class="about-block" data-aos-duration="3000" data-aos-delay="200" data-aos-once="true">
+                        <div class="video-block modal-block" id="video-mod">
+                        	<div class="box-shadow"></div>
+                            <div id="overlay"></div>
+                            <div class="video">
+                                <video loop muted="muted" id="video">
+                                    <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                                </video>
+                                <svg width="370px" height="296px">
+									<defs>
+										<linearGradient id="PSgrad_1" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
+										  <stop offset="0%" stop-color="rgb(3,146,190)" stop-opacity="1" />
+										  <stop offset="100%" stop-color="rgb(1,219,189)" stop-opacity="1" />
+										</linearGradient>
+									</defs>
+									<path fill-rule="evenodd"  fill="url(#PSgrad_1)" d="M330.000,295.469 L-0.000,295.469 L-0.000,41.531 C-0.000,19.477 24.614,0.531 40.000,0.531 L370.000,0.531 L370.000,255.469 C370.000,267.894 357.945,295.469 330.000,295.469 Z"/>
+								</svg>
+                            </div>
+                        </div>
+                        <div class="txt">
+                            <div class="title"><h2>Про Mezzway</h2></div>
+                            <p class="footnote">Распределенные регистры и протоколы блокчейнов обеспечивают беспрецедентную ценность для программы лояльности в будущем</p>
+                            <p>Mezzway Corporation, Ltd, является британской инвестиционной платформой для криптовалюты и пользователей по всему миру, которые инвестируют и зарабатывают свои деньги независимо от того, будет ли она депонирована сразу или постепенно. Мы предлагаем уникальные инвестиционные планы для инвесторов всех видов. </p>
+                            <a href="#" class="btn uppercase"><span>присоединиться</span></a>
+                        </div>
+                    </div>
+                    <div class="flex" >
+                        <img src="img/about/1.png" alt="" data-aos-delay="200" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/6.png" alt="" data-aos-delay="400" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/3.png" alt="" data-aos-delay="600" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/2.png" alt="" data-aos-delay="800" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/7.png" alt="" data-aos-delay="1000" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/4.png" alt="" data-aos-delay="1200" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/5.png" alt="" data-aos-delay="1400" data-aos-once="true" data-aos="flip-up"/>
+                        <img src="img/about/8.png" alt="" data-aos-delay="1600" data-aos-once="true" data-aos="flip-up"/>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="step">
+                <div class="flex">
+                    <div class="item step-1">
+                        <div data-aos="flip-left" data-aos-delay="200" data-aos-once="true">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="127px" height="94px">
+                            <defs>
+                                <linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+                                  <stop offset="0%" stop-color="rgb(3,146,190)" stop-opacity="1" />
+                                  <stop offset="100%" stop-color="rgb(1,219,189)" stop-opacity="1" />
+                                </linearGradient>
+                            </defs>
+                            <path fill-rule="evenodd"  fill="url(#PSgrad_0)" d="M106.943,91.399 L106.943,27.078 C104.365,28.798 101.484,30.365 98.305,31.783 C95.124,33.201 92.030,34.425 89.022,35.456 L83.220,20.633 C85.713,19.602 88.313,18.421 91.021,17.088 C93.728,15.757 96.371,14.297 98.950,12.705 C101.529,11.116 103.998,9.441 106.364,7.678 C108.727,5.918 110.854,4.049 112.746,2.071 L126.154,2.071 L126.154,91.399 L106.943,91.399 ZM32.424,93.204 C22.367,93.204 14.480,89.188 8.765,81.152 C3.047,73.117 0.191,61.581 0.191,46.542 C0.191,39.065 0.943,32.449 2.447,26.691 C3.950,20.935 6.122,16.079 8.958,12.126 C11.795,8.174 15.189,5.165 19.144,3.102 C23.096,1.040 27.524,0.009 32.424,0.009 C42.480,0.009 50.365,4.027 56.082,12.061 C61.797,20.097 64.656,31.589 64.656,46.542 C64.656,61.581 61.797,73.117 56.082,81.152 C50.365,89.188 42.480,93.204 32.424,93.204 ZM44.414,34.361 C43.983,30.709 43.296,27.551 42.351,24.886 C41.404,22.224 40.115,20.161 38.483,18.699 C36.850,17.239 34.829,16.508 32.424,16.508 C30.016,16.508 28.018,17.239 26.428,18.699 C24.837,20.161 23.548,22.224 22.560,24.886 C21.571,27.551 20.862,30.709 20.433,34.361 C20.002,38.014 19.788,42.075 19.788,46.542 C19.788,51.011 20.002,55.093 20.433,58.787 C20.862,62.483 21.571,65.664 22.560,68.326 C23.548,70.991 24.837,73.053 26.428,74.513 C28.018,75.976 30.016,76.705 32.424,76.705 C34.829,76.705 36.850,75.976 38.483,74.513 C40.115,73.053 41.404,70.991 42.351,68.326 C43.296,65.664 43.983,62.483 44.414,58.787 C44.843,55.093 45.058,51.011 45.058,46.542 C45.058,42.075 44.843,38.014 44.414,34.361 Z"/>
+                        </svg>
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-once="true">
+                            <div class="step">Шаг 1</div>
+                            <p>Регистрируйтесь на Mezzway </p> 
+                        </div>
+                    </div><!--item-->
+                    <div class="item step-2">
+                        <div data-aos="flip-left" data-aos-delay="400" data-aos-once="true">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="142px" height="94px">
+							<defs>
+								<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+								  <stop offset="0%" stop-color="rgb(3,146,190)" stop-opacity="1" />
+								  <stop offset="100%" stop-color="rgb(1,219,189)" stop-opacity="1" />
+								</linearGradient>
+							</defs>
+							<path fill-rule="evenodd"  fill="url(#PSgrad_0)" d="M141.431,91.399 L81.865,91.399 C81.692,90.455 81.608,89.252 81.608,87.790 C81.608,86.330 81.608,85.299 81.608,84.696 C81.608,80.572 82.272,76.791 83.606,73.353 C84.937,69.917 86.678,66.715 88.827,63.750 C90.975,60.785 93.405,58.014 96.112,55.436 C98.820,52.858 101.505,50.280 104.170,47.702 C106.233,45.726 108.167,43.857 109.972,42.095 C111.777,40.334 113.366,38.614 114.742,36.939 C116.116,35.263 117.192,33.587 117.966,31.912 C118.740,30.236 119.126,28.540 119.126,26.820 C119.126,23.040 118.050,20.375 115.903,18.828 C113.754,17.282 111.088,16.508 107.909,16.508 C105.588,16.508 103.416,16.874 101.398,17.604 C99.378,18.335 97.530,19.195 95.854,20.182 C94.178,21.171 92.738,22.159 91.535,23.146 C90.330,24.135 89.428,24.931 88.827,25.531 L79.287,12.126 C83.068,8.603 87.474,5.702 92.502,3.425 C97.530,1.149 102.923,0.009 108.682,0.009 C113.925,0.009 118.437,0.611 122.220,1.813 C126.002,3.018 129.118,4.713 131.568,6.905 C134.017,9.096 135.822,11.761 136.983,14.897 C138.143,18.035 138.723,21.579 138.723,25.531 C138.723,28.798 138.078,31.934 136.789,34.941 C135.500,37.950 133.824,40.850 131.761,43.642 C129.698,46.435 127.378,49.120 124.799,51.698 C122.220,54.276 119.684,56.725 117.192,59.045 C115.903,60.250 114.505,61.603 113.002,63.105 C111.497,64.610 110.057,66.135 108.682,67.682 C107.307,69.228 106.082,70.669 105.009,72.000 C103.933,73.333 103.267,74.429 103.010,75.287 L141.431,75.287 L141.431,91.399 ZM33.002,93.204 C22.946,93.204 15.059,89.188 9.343,81.152 C3.627,73.117 0.770,61.581 0.770,46.542 C0.770,39.065 1.521,32.449 3.026,26.691 C4.529,20.935 6.701,16.079 9.537,12.126 C12.374,8.174 15.768,5.165 19.723,3.102 C23.675,1.040 28.103,0.009 33.002,0.009 C43.059,0.009 50.944,4.027 56.661,12.061 C62.376,20.097 65.234,31.589 65.234,46.542 C65.234,61.581 62.376,73.117 56.661,81.152 C50.944,89.188 43.059,93.204 33.002,93.204 ZM44.993,34.361 C44.562,30.709 43.875,27.551 42.930,24.886 C41.983,22.224 40.694,20.161 39.062,18.699 C37.428,17.239 35.408,16.508 33.002,16.508 C30.595,16.508 28.597,17.239 27.007,18.699 C25.416,20.161 24.126,22.224 23.139,24.886 C22.150,27.551 21.441,30.709 21.012,34.361 C20.580,38.014 20.367,42.075 20.367,46.542 C20.367,51.011 20.580,55.093 21.012,58.787 C21.441,62.483 22.150,65.664 23.139,68.326 C24.126,70.991 25.416,73.053 27.007,74.513 C28.597,75.976 30.595,76.705 33.002,76.705 C35.408,76.705 37.428,75.976 39.062,74.513 C40.694,73.053 41.983,70.991 42.930,68.326 C43.875,65.664 44.562,62.483 44.993,58.787 C45.422,55.093 45.638,51.011 45.638,46.542 C45.638,42.075 45.422,38.014 44.993,34.361 Z"/>
+						</svg>
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="500" data-aos-once="true">
+                            <div class="step">Шаг 2</div>
+                            <p>Пополните счет</p> 
+                        </div>
+                    </div><!--item-->
+                    <div class="item step-3">
+                        <div data-aos="flip-left" data-aos-delay="600" data-aos-once="true">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140px" height="94px">
+							<defs>
+								<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+								  <stop offset="0%" stop-color="rgb(3,146,190)" stop-opacity="1" />
+								  <stop offset="100%" stop-color="rgb(1,219,189)" stop-opacity="1" />
+								</linearGradient>
+							</defs>
+							<path fill-rule="evenodd"  fill="url(#PSgrad_0)" d="M125.042,42.868 C129.684,44.761 133.272,47.581 135.808,51.323 C138.342,55.065 139.611,59.561 139.611,64.809 C139.611,68.940 138.923,72.747 137.549,76.231 C136.173,79.716 134.023,82.729 131.102,85.267 C128.179,87.804 124.462,89.784 119.950,91.204 C115.437,92.622 110.086,93.333 103.898,93.333 C101.577,93.333 99.127,93.182 96.549,92.882 C93.970,92.580 91.476,92.173 89.071,91.657 C86.664,91.142 84.472,90.584 82.496,89.981 C80.517,89.381 78.970,88.821 77.854,88.306 L81.593,72.322 C83.827,73.269 86.685,74.278 90.167,75.351 C93.648,76.427 97.967,76.963 103.125,76.963 C109.055,76.963 113.395,75.847 116.146,73.611 C118.896,71.377 120.272,68.370 120.272,64.588 C120.272,62.268 119.777,60.314 118.789,58.723 C117.800,57.134 116.446,55.845 114.728,54.856 C113.008,53.869 110.967,53.180 108.604,52.794 C106.239,52.407 103.725,52.213 101.061,52.213 L93.584,52.213 L93.584,36.745 L102.093,36.745 C103.982,36.745 105.810,36.574 107.572,36.230 C109.333,35.887 110.902,35.307 112.279,34.490 C113.652,33.674 114.748,32.556 115.566,31.138 C116.382,29.720 116.791,27.938 116.791,25.789 C116.791,24.157 116.446,22.739 115.759,21.535 C115.070,20.333 114.190,19.344 113.117,18.570 C112.041,17.797 110.796,17.217 109.377,16.830 C107.959,16.443 106.518,16.250 105.058,16.250 C101.362,16.250 97.945,16.810 94.809,17.926 C91.670,19.044 88.813,20.419 86.235,22.051 L79.402,8.000 C80.775,7.143 82.387,6.240 84.236,5.294 C86.083,4.349 88.124,3.489 90.360,2.716 C92.594,1.942 94.980,1.298 97.516,0.782 C100.050,0.267 102.737,0.009 105.574,0.009 C110.816,0.009 115.351,0.631 119.176,1.876 C123.000,3.121 126.158,4.879 128.652,7.153 C131.144,9.427 132.992,12.087 134.197,15.132 C135.399,18.178 136.001,21.503 136.001,25.106 C136.001,28.625 135.012,32.037 133.036,35.340 C131.058,38.643 128.395,41.152 125.042,42.868 ZM32.730,93.204 C22.674,93.204 14.787,89.188 9.071,81.152 C3.354,73.117 0.498,61.581 0.498,46.542 C0.498,39.065 1.249,32.449 2.754,26.691 C4.257,20.935 6.429,16.079 9.265,12.126 C12.101,8.174 15.496,5.165 19.450,3.102 C23.403,1.040 27.831,0.009 32.730,0.009 C42.787,0.009 50.672,4.027 56.389,12.061 C62.104,20.097 64.962,31.589 64.962,46.542 C64.962,61.581 62.104,73.117 56.389,81.152 C50.672,89.188 42.787,93.204 32.730,93.204 ZM44.721,34.361 C44.290,30.709 43.603,27.551 42.658,24.886 C41.711,22.224 40.421,20.161 38.790,18.699 C37.156,17.239 35.136,16.508 32.730,16.508 C30.323,16.508 28.324,17.239 26.735,18.699 C25.144,20.161 23.854,22.224 22.867,24.886 C21.878,27.551 21.169,30.709 20.740,34.361 C20.309,38.014 20.095,42.075 20.095,46.542 C20.095,51.011 20.309,55.093 20.740,58.787 C21.169,62.483 21.878,65.664 22.867,68.326 C23.854,70.991 25.144,73.053 26.735,74.513 C28.324,75.976 30.323,76.705 32.730,76.705 C35.136,76.705 37.156,75.976 38.790,74.513 C40.421,73.053 41.711,70.991 42.658,68.326 C43.603,65.664 44.290,62.483 44.721,58.787 C45.150,55.093 45.365,51.011 45.365,46.542 C45.365,42.075 45.150,38.014 44.721,34.361 Z"/>
+						</svg>
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="700" data-aos-once="true">
+                            <div class="step">Шаг 3</div>
+                            <p>Сделайте ваш вклад</p> 
+                        </div>
+                    </div><!--item-->
+                    <div class="item step-4">
+                        <div data-aos="flip-left" data-aos-delay="800" data-aos-once="true">
+						<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="145px" height="94px" >
+							<defs>
+								<linearGradient id="PSgrad_0" x1="0%" x2="0%" y1="100%" y2="0%">
+								  <stop offset="0%" stop-color="rgb(3,146,190)" stop-opacity="1" />
+								  <stop offset="100%" stop-color="rgb(1,219,189)" stop-opacity="1" />
+								</linearGradient>
+							</defs>
+							<path fill-rule="evenodd"  fill="url(#PSgrad_0)" d="M134.564,71.420 L134.564,91.399 L115.741,91.399 L115.741,71.420 L77.191,71.420 L77.191,57.369 C79.080,53.589 81.445,49.313 84.281,44.544 C87.118,39.775 90.277,34.876 93.758,29.849 C97.239,24.822 100.914,19.904 104.781,15.090 C108.649,10.278 112.517,5.938 116.385,2.071 L134.564,2.071 L134.564,55.694 L144.105,55.694 L144.105,71.420 L134.564,71.420 ZM115.741,25.531 C112.388,29.914 108.821,34.683 105.039,39.839 C101.256,44.995 98.077,50.280 95.498,55.694 L115.741,55.694 L115.741,25.531 ZM32.840,93.204 C22.784,93.204 14.897,89.188 9.181,81.152 C3.464,73.117 0.608,61.581 0.608,46.542 C0.608,39.065 1.359,32.449 2.864,26.691 C4.367,20.935 6.538,16.079 9.375,12.126 C12.211,8.174 15.606,5.165 19.560,3.102 C23.512,1.040 27.941,0.009 32.840,0.009 C42.897,0.009 50.781,4.027 56.499,12.061 C62.214,20.097 65.072,31.589 65.072,46.542 C65.072,61.581 62.214,73.117 56.499,81.152 C50.781,89.188 42.897,93.204 32.840,93.204 ZM44.831,34.361 C44.399,30.709 43.712,27.551 42.768,24.886 C41.821,22.224 40.531,20.161 38.900,18.699 C37.266,17.239 35.245,16.508 32.840,16.508 C30.433,16.508 28.434,17.239 26.845,18.699 C25.254,20.161 23.964,22.224 22.977,24.886 C21.988,27.551 21.278,30.709 20.850,34.361 C20.418,38.014 20.205,42.075 20.205,46.542 C20.205,51.011 20.418,55.093 20.850,58.787 C21.278,62.483 21.988,65.664 22.977,68.326 C23.964,70.991 25.254,73.053 26.845,74.513 C28.434,75.976 30.433,76.705 32.840,76.705 C35.245,76.705 37.266,75.976 38.900,74.513 C40.531,73.053 41.821,70.991 42.768,68.326 C43.712,65.664 44.399,62.483 44.831,58.787 C45.260,55.093 45.475,51.011 45.475,46.542 C45.475,42.075 45.260,38.014 44.831,34.361 Z"/>
+						</svg>
+                        </div>
+                        <div class="txt" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="900" data-aos-once="true">
+                            <div class="step">Шаг 4</div>
+                            <p>Зарабатывайте и выводите прибыль  </p> 
+                        </div>
+                    </div><!--item-->
+                </div>
+            </section>
+             
+        </div> 
+        
+        <section id="begin">
+            <div class="container" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" data-aos-once="true">
+                <div class="title line">
+                    <h2>Начни работать с Mezzway</h2>
+                    <p>Компания Mezzway предлагает Вам простой способ получения дополнительного дохода, инвестируя в развития блокчейн и IT технологий. Финансируя наше инновационное развитие, вы имеете право получить часть прибыли. Правильное управление Вашим капиталом сегодня - залог стабильного и обеспеченного завтра!</p>
+                </div>
+                <div class="flex">
+                    <div class="txt">
+                        <p class="txt-opacity">Время на регистрацию - всего минута.  Вы сразу получите:</p>
+                        <ul>
+                            <li>Доступ ко всем инвест. инструментам</li>
+                            <li>Возможность заработка без вложений</li>
+                            <li>Стабильный пассивный доход</li>
+                        </ul>
+                        <p class="txt-opacity m-top-60">Мы работаем с самыми популярными платежными системами:</p>
+                        <div class="flex">
+                            <div class="img"><img src="img/ps/bitcoin-w.png" alt=""/></div>
+                            <div class="img"><img src="img/ps/ETH-w.png" alt=""/></div>
+                            <div class="img"><img src="img/ps/LTC-w.png" alt=""/></div>
+                            <div class="img"><img src="img/ps/ADVCASH-w.png" alt=""/></div>
+                            <div class="img"><img src="img/ps/PM-w.png" alt=""/></div>
+                            <div class="img"><img src="img/ps/PAYER-w.png" alt=""/></div>
+                        </div>
+                        <p class="txt-opacity m-top-60">Доступ к платформе с любого браузера и устройства:</p>
+                        <div class="img"><img src="img/browser.png" alt=""/></div>
+                    </div>
+                    <div class="referral-program">
+                    	<div class="box-shadow"></div>
+                        <div class="relative">
+                            <div class="title">Реферальная программа</div>
+                            <div class="item level-1 js-animation">
+                                <div class="level">1 уровень</div>
+                                <div class="number"></div>
+                            </div>
+                            <div class="item level-2 js-animation">
+                                <div class="level">2 уровень</div>
+                                <div class="number"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> 
+          
+		<footer>
+           <div id="dispatch" class="m-top">
+               <div class="container">
+                   <div class="flex">
+                       <div class="left-block">
+                           <div class="img"><img src="img/2.png" alt=""/></div>
+                           <div class="txt">
+                               <div class="title">Companies House</div>
+                               <div class="number">#123456789</div>
+                           </div>
+                       </div>
+                       <div class="right-block">
+                       		<div class="txt">
+                               <div class="title">Оставайтесь на связи</div>
+                               <p>Подпишитесь на рассылку новостей</p>
+                           </div>
+                           <div class="form-block requisites">
+                                <form action="" method="post">
+                                    <img src="img/ico/mail.png" alt=""/>
+                                    <input placeholder="Ваш e-mail" type="email" class="input-form" >
+                                    <button class="btn"><span>ОК</span></button>
+                                </form>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="container">
+               <div class="top flex">
+                   <div class="left-block">
+                       <div class="title">МЕНЮ</div>
+                       <ul>
+                           <li><a href="#">О нас </a></li>
+                           <li><a href="#">Bounty</a></li>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Контакты</a></li>
+                       </ul>
+                   </div>
+                   <div class="right-block">
+                       <div class="title">КОНТАКТЫ</div>
+                       <div class="flex">
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/phone.png" alt=""/></div>
+                               <a href="tel:+ 99 123 222111">+ 99 123 222111</a>
+                           </div>
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/e-mal.png" alt=""/></div>
+                               <a href="mailto:info@mezzway.com ">info@mezzway.com </a>
+                           </div>
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/adres.png" alt=""/></div>
+                               <p>12 Trevor Square, Knightsbridge<br/>SW7 1DT, London, United Kingdom</p>
+                           </div>
+                       </div>
+                   </div>
+               </div><!--top-->
+               <div class="bottom flex">
+                   <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                   <div class="copyright">©2018 Mezzway. All rights reserved</div>
+               </div>
+           </div>
+		</footer>
+       
+       <div class="modal hidden" data-id="#video-mod">
+            <div class="modal-ov"></div>
+            <div class="modal-content video-form">
+                <span class="close close-v"></span>
+                <video loop muted="muted" id="video-m" controls>
+                    <source src="img/video.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+                </video>
+            </div>
+        </div>
+        
+       <div class="modal hidden" data-id="#login">
+            <div class="modal-ov"></div>
+            <div class="modal-content modal-form">
+                <span class="close"></span>
+                <div class="flex">
+                    <div class="img"><img src="img/3.jpg" alt=""/></div>
+                    <div class="right-block">
+                        <div class="form-block">
+                        	<a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                            <form action="" method="post">
+                                <div class="title">
+                                    <h2>Войдите в свой аккаунт</h2>
+                                </div>
+                                <input placeholder="Логин или e-mail" type="text" name="log-mail" class="input-form" required>
+                                <input placeholder="Пароль" type="password" name="password" class="input-form" required>
+                                <button class="btn">Войти</button>
+                            </form>
+                            <div class="bottom-txt">
+                            	<p><span>Забыли пароль?</span> <a href="#">Восстановить</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hidden" data-id="#registration">
+            <div class="modal-ov"></div>
+            <div class="modal-content modal-form">
+                <span class="close"></span>
+                <div class="flex">
+                    <div class="img"><img src="img/3.jpg" alt=""/></div>
+                    <div class="right-block">
+                        <div class="form-block">
+                        	<a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                            <form action="" method="post">
+                                <div class="title">
+                                    <h2>Регистрация</h2>
+                                </div>
+                                <div class="item-2">
+                                    <input placeholder="Ваш логин:*" type="text" name="name" class="input-form item" required>
+                                    <input placeholder="E-mail:*" type="email" name="email" class="input-form item" required>
+                                </div>
+                                <div class="item-2">
+                                    <input placeholder="Пароль:*" type="password" name="password" class="input-form item" required>
+                                    <input placeholder="Повторите пароль:*" type="password" name="password-repeat" class="input-form item" required>
+                                </div>
+                                <input placeholder="Вас пригласил:" type="text" name="text" class="input-form item item-1" required>
+                                <button class="btn">Зарегистрироваться</button>
+                            </form>
+                            <div class="bottom-txt">
+                            	<p><span>Забыли пароль?</span> <a href="#">Восстановить</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="js/modernizr.js"></script> 
+	   <script type="text/javascript" src="js/header-bg.js"></script>
+       <script type="text/javascript" src="animate/aos.js"></script>
+	   <script type="text/javascript" src="js/main.js"></script>  
+       <script>
+		   var overlay = document.getElementById('overlay');
+			vid = document.getElementById('video'); 
+			overlay.addEventListener('mouseenter', function() {
+			  vid.play();
+			  overlay.className = "o";
+			});
+			
+			vid.addEventListener('mouseleave', function() {
+			  vid.pause();
+			  overlay.className = "";
+			});
+		</script> 
+	</body>
+</html>

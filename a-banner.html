@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Mezzway</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+	<body>
+       <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="about.html">2</a>
+            <a href="bounty.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="faq.html">5</a>
+            <a href="a-index.html">6</a>
+            <a href="a-history.html">7</a>
+            <a href="a-banner.html">8</a>
+            <a href="a-open-deposits.html">9</a>
+            <a href="a-referal.html">10</a>
+            <a href="a-settings.html">11</a>
+            <a href="a-withdraw.html">12</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+       <div id="loader">
+            <div id="cube-loader">
+                <div class="caption">
+                  <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
+                 </div>
+              </div>
+           </div>
+        </div><!--/Loader-->
+        
+        <div id="admin-page">
+            <div id="wrapper">
+                <header>
+                    <div id="particles-background" class="vertical-centered-box"></div>
+                    <div id="particles-foreground" class="vertical-centered-box"></div>
+                    <div class="container">
+                        <div class="top flex">
+                            <div class="left-block flex">
+                                <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                                <div class="language">
+                                    <a href="#" ><img src="img/en.png" alt=""/></a>
+                                    <a href="#" class="active"><img src="img/ru.png" alt=""/></a>    
+                                </div><!--/language-->
+                            </div>
+                            <div class="right-block flex">
+                                <ul class="social-networks">
+                                    <li><a href="#"><img src="img/social/facebook.png" alt="facebook"/></a></li>
+                                    <li><a href="#"><img src="img/social/telegram.png" alt="telegram"/></a></li>
+                                    <li><a href="#"><img src="img/social/twitter.png" alt="twitter"/></a></li>
+                                    <li><a href="#"><img src="img/social/vk.png" alt="vk"/></a></li>
+                                    <li><a href="#"><img src="img/social/skype.png" alt="skype"/></a></li>
+                                </ul>
+                                <div class="register-login">
+                                    <a href="#" id="logout" class="btn btn-2 modal-block"><span>Выйти</span></a>
+                                </div><!--/register-login-->
+                            </div>
+                        </div><!--/top-->
+                    </div><!--/container-->
+                    <div class="middle">
+                        <div class="container flex">
+                            <nav class="nav">
+                                <a class="cd-nav-trigger scale">
+                                    <div class="hamburger-menu menu-toggle">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </a>
+                                <div class="menu">
+                                    <ul class="sliding-menu">
+                                        <li><a href="#"><img src="img/admin/menu-icons/deposit.svg" alt=""/>Открыть депозит</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/withdraw.svg" alt=""/>Вывести средства</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/history.svg" alt=""/>История</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/partners.svg" alt=""/>Партнеры</a></li>
+                                        <li class="active"><a href="#"><img src="img/admin/menu-icons/baners.svg" alt=""/>Банеры </a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/settings.svg" alt=""/>Настройки</a></li>
+                                    </ul>
+                                </div>
+                            </nav> 
+                        </div><!--/container-->
+                    </div><!--/middle-->
+                </header>
+                
+                <section id="history" class="admin">
+                    <div class="container">
+                         <div class="flex align-top">
+                            <div class="balance-account">
+                                <div class="box-shadow"></div>
+                                <div class="bg">
+                                    <div class="title">Баллансы Счетов</div>
+                                    <div class="balance-block-all">
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-btc.png" alt=""/></div>
+                                                    <div class="title">Bitcoin</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-advcash.png" alt=""/></div>
+                                                    <div class="title">AdvCash</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-eth.png" alt=""/></div>
+                                                    <div class="title">Ethereum</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-ltc.png" alt=""/></div>
+                                                    <div class="title">Litecoin</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-payer.png" alt=""/></div>
+                                                    <div class="title">Payer</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-pm.png" alt=""/></div>
+                                                    <div class="title">P. Money</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                    </div>
+                                </div>
+                            </div><!--balance-account-->
+                            <div class="right-block">
+                                <div class="title filter">
+                                    <h2>Рекламные банеры</h2>
+                                </div>
+                                <div class="banner-block">
+                                    <div class="banner-item b-728x90">
+                                        <div class="title"><h2>Банер 728 x 90</h2></div>
+                                        <div class="item">
+                                            <div class="img"></div>
+                                            <div class="link-block flex">
+                                                <div class="left-block">
+                                                    <textarea id="blink1" ><a> <img=”baner”, url=”qustate.com/adminasdaskdlaklsdakldsaslkdklasdko, or other url”> HELLO WORLD </img> </a></textarea>
+                                                </div>
+                                                <button class="btn" onclick="blink()">Скоприровать код</button>
+                                            </div>
+                                        </div>
+                                    </div><!--/banner-item-->
+                                    <div class="banner-item b-468x60">
+                                        <div class="title"><h2>Банер 468 x 60</h2></div>
+                                        <div class="item">
+                                            <div class="img"></div>
+                                            <div class="link-block flex">
+                                                <div class="left-block">
+                                                    <textarea id="blink2"><a> <img=”baner”, url=”qustate.com/adminasdaskdlaklsdakldsaslkdklasdko, or other url”> HELLO WORLD </img> </a></textarea>
+                                                </div>
+                                                <button class="btn" onclick="blink2()">Скоприровать код</button>
+                                            </div>
+                                        </div>
+                                    </div><!--/banner-item-->
+                                    <div class="flex b-flex">
+                                        <div class="banner-item b-200x300">
+                                            <div class="title"><h2>200 x 300</h2></div>
+                                            <div class="item">
+                                                <div class="img"></div>
+                                                <div class="link-block">
+                                                    <div class="left-block">
+                                                        <textarea id="blink3"><a> <img=”baner”, url=”qustate.com/adminasdaskdlaklsdakldsaslkdklasdko, or other url”> HELLO WORLD </img> </a></textarea>
+                                                    </div>
+                                                    <button class="btn" onclick="blink3()">Скоприровать код</button>
+                                                </div>
+                                            </div>
+                                        </div><!--/banner-item-->
+                                        <div class="banner-item b-125x125">
+                                            <div class="title"><h2>125 x 125</h2></div>
+                                            <div class="item">
+                                                <div class="img"></div>
+                                                <div class="link-block">
+                                                    <div class="left-block">
+                                                        <textarea id="blink4"><a> <img=”baner”, url=”qustate.com/adminasdaskdlaklsdakldsaslkdklasdko, or other url”> HELLO WORLD </img> </a></textarea>
+                                                    </div>
+                                                    <button class="btn" onclick="blink4()">Скоприровать код</button>
+                                                </div>
+                                            </div>
+                                        </div><!--/banner-item-->
+                                        <div class="banner-item b-100x100">
+                                            <div class="title"><h2>100 x 100</h2></div>
+                                            <div class="item">
+                                                <div class="img"></div>
+                                                <div class="link-block">
+                                                    <div class="left-block">
+                                                        <textarea id="blink5"><a> <img=”baner”, url=”qustate.com/adminasdaskdlaklsdakldsaslkdklasdko, or other url”> HELLO WORLD </img> </a></textarea>
+                                                    </div>
+                                                    <button class="btn" onclick="blink5()">Скоприровать код</button>
+                                                </div>
+                                            </div>
+                                        </div><!--/banner-item-->
+                                    </div>
+                                    <script>
+                                        //BANNER JS
+                                        function blink() {
+                                          var bcopyText = document.getElementById("blink1");
+                                          bcopyText.select();
+                                          document.execCommand("Copy");
+                                        }
+                                        function blink2() {
+                                          var bcopyText2 = document.getElementById("blink2");
+                                          bcopyText2.select();
+                                          document.execCommand("Copy");
+                                        }
+                                        function blink3() {
+                                          var bcopyText3 = document.getElementById("blink3");
+                                          bcopyText3.select();
+                                          document.execCommand("Copy");
+                                        }
+                                        
+                                        function blink4() {
+                                          var bcopyText4 = document.getElementById("blink4");
+                                          bcopyText4.select();
+                                          document.execCommand("Copy");
+                                        }
+                                        
+                                        function blink5() {
+                                          var bcopyText5 = document.getElementById("blink5");
+                                          bcopyText5.select();
+                                          document.execCommand("Copy");
+                                        }
+                                        var text = jQuery('#blink1').val(),
+                                            matches = text.match(/\n/g),
+                                            breaks = matches ? matches.length : 2;
+                                        
+                                        jQuery('#blink1').attr('rows',breaks + 2);
+                                        
+                                        var text = jQuery('#blink2').val(),
+                                            matches = text.match(/\n/g),
+                                            breaks = matches ? matches.length : 2;
+                                        
+                                        jQuery('#blink2').attr('rows',breaks + 2);
+                                        
+                                        
+                                        var text = jQuery('#blink3').val(),
+                                            matches = text.match(/\n/g),
+                                            breaks = matches ? matches.length : 2;
+                                        
+                                        jQuery('#blink3').attr('rows',breaks + 2);
+                                        
+                                        
+                                        var text = jQuery('#blink4').val(),
+                                            matches = text.match(/\n/g),
+                                            breaks = matches ? matches.length : 2;
+                                        
+                                        jQuery('#blink4').attr('rows',breaks + 2);
+                                        
+                                        
+                                        var text = jQuery('#blink5').val(),
+                                            matches = text.match(/\n/g),
+                                            breaks = matches ? matches.length : 2;
+                                        
+                                        jQuery('#blink5').attr('rows',breaks + 2);
+                                    </script>
+                                </div><!--banner-block-->
+                            </div>
+                        </div>
+                    </div><!--container-->
+                </section>
+            </div> 
+              
+            <footer>
+               <div class="container">
+                   <div class="bottom flex">
+                       <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                       <div class="copyright">©2018 Mezzway. All rights reserved</div>
+                   </div>
+               </div>
+            </footer>
+        </div><!--#admin-page-->
+       
+
+       <script type="text/javascript" src="js/modernizr.js"></script> 
+	   <script type="text/javascript" src="js/header-bg.js"></script>
+       <script type="text/javascript" src="animate/aos.js"></script>
+	   <script type="text/javascript" src="js/main.js"></script>  
+	</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Mezzway</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+	<body class="inside-page">
+       <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="about.html">2</a>
+            <a href="bounty.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="faq.html">5</a>
+            <a href="a-index.html">6</a>
+            <a href="a-history.html">7</a>
+            <a href="a-banner.html">8</a>
+            <a href="a-open-deposits.html">9</a>
+            <a href="a-referal.html">10</a>
+            <a href="a-settings.html">11</a>
+            <a href="a-withdraw.html">12</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+       <div id="loader">
+            <div id="cube-loader">
+                <div class="caption">
+                  <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
+                 </div>
+              </div>
+           </div>
+        </div><!--/Loader-->
+        
+        
+		<div id="wrapper">
+        	<header>
+                <div id="particles-background" class="vertical-centered-box"></div>
+                <div id="particles-foreground" class="vertical-centered-box"></div>
+                <div class="container">
+                    <div class="top flex">
+                        <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                        <nav class="nav">
+                            <a class="cd-nav-trigger scale">
+                                <div class="hamburger-menu menu-toggle">
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                    <div class="bar"></div>
+                                </div>
+                            </a>
+                            <div class="menu">
+                                <ul class="sliding-menu">
+                                    <li class="active"><a href="#">О нас</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                    <li><a href="#">Bounty</a></li>
+                                    <li class="margin-r-0"><a href="#">Контакты</a></li>
+                                </ul>
+                                <div class="register-login">
+                                    <a href="#" id="login" class="btn btn-2 modal-block"><span>Вход</span></a>
+                                    <a href="#" id="registration" class="btn modal-block"><span>Регистрация</span></a>
+                                </div><!--/register-login-->
+                            </div>
+                        </nav> 
+                        <div class="register-login">
+                            <a href="#" id="login" class="btn btn-2 modal-block"><span>Вход</span></a>
+                            <a href="#" id="registration" class="btn modal-block"><span>Регистрация</span></a>
+                        </div><!--/register-login-->
+                    </div><!--/top-->
+				</div><!--/container-->
+                <div class="middle">
+                    <div class="container flex">
+                        <div class="language">
+                            <a href="#" ><img src="img/en.png" alt=""/></a>
+                            <a href="#" class="active"><img src="img/ru.png" alt=""/></a>    
+                        </div><!--/language-->
+                        <div class="bonus">
+                            <div class="title">Бонус за регистрацию 0.1$<img src="img/ico/arrow.png" alt=""/></div>
+                            <ul class="social-networks">
+                                <li><a href="#"><img src="img/social/facebook.png" alt="facebook"/></a></li>
+                                <li><a href="#"><img src="img/social/telegram.png" alt="telegram"/></a></li>
+                                <li><a href="#"><img src="img/social/twitter.png" alt="twitter"/></a></li>
+                                <li><a href="#"><img src="img/social/vk.png" alt="vk"/></a></li>
+                                <li><a href="#"><img src="img/social/skype.png" alt="skype"/></a></li>
+                            </ul>
+                        </div>
+                    </div><!--/container-->
+                </div><!--/middle-->
+                <div class="container">
+                    <div class="bottom">
+                        <div class="txt">
+                            <div class="title"><h1>Контактная информация</h1></div>
+                        </div>
+                    </div><!--/bottom-->
+                </div><!--/container-->
+			</header>
+            
+            <section id="contacts">
+                <div class="container">
+                	<div class="flex">
+                    	<div class="left-block">
+                           <div class="flex" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="200" data-aos-once="true"> 
+                               <div class="img"><img src="img/ico/phone.png" alt=""/></div>
+                               <a href="tel:+ 99 123 222111">+ 99 123 222111</a>
+                           </div>
+                           <div class="flex" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="400" data-aos-once="true"> 
+                               <div class="img"><img src="img/ico/adres.png" alt=""/></div>
+                               <p>12 Trevor Square, Knightsbridge<br/>SW7 1DT, London, United Kingdom</p>
+                           </div>
+                           <div class="flex" data-aos="fade-up" data-aos-duration="3000" data-aos-delay="600" data-aos-once="true"> 
+                               <div class="img"><img src="img/ico/e-mal.png" alt=""/></div>
+                               <a href="mailto:info@mezzway.com ">info@mezzway.com </a>
+                           </div>
+                       </div>
+                       <div class="right-block">
+                           <div class="box-shadow"></div>
+                           <div id="map">
+                           		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.6995319311786!2d-0.16649758462990796!3d51.50038111903794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760538a02a51ef%3A0xd6276b3b4297fc2a!2zMTIgVHJldm9yIFNxdWFyZSwgS25pZ2h0c2JyaWRnZSwgTG9uZG9uIFNXNyAxRFQsINCS0LXQu9C40LrQvtCx0YDQuNGC0LDQvdC40Y8!5e0!3m2!1sru!2sby!4v1526986498954"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                           </div>
+                       </div>
+                    </div>
+                    <ul class="social-networks">
+                        <li><a href="#"><img src="img/social/facebook.png" alt="facebook"/>fb.com/mezzway</a></li>
+                        <li><a href="#"><img src="img/social/telegram.png" alt="telegram"/>@mezzway</a></li>
+                        <li><a href="#"><img src="img/social/twitter.png" alt="twitter"/>tw.com/mezzway</a></li>
+                        <li><a href="#"><img src="img/social/vk.png" alt="vk"/>vk.com/mezzway</a></li>
+                        <li><a href="#"><img src="img/social/skype.png" alt="skype"/>mezzway</a></li>
+                    </ul>
+                </div>
+            </section>
+        </div> 
+         
+		<footer>
+           <div id="dispatch" class="m-top">
+               <div class="container">
+                   <div class="flex">
+                       <div class="left-block">
+                           <div class="img"><img src="img/2.png" alt=""/></div>
+                           <div class="txt">
+                               <div class="title">Companies House</div>
+                               <div class="number">#123456789</div>
+                           </div>
+                       </div>
+                       <div class="right-block">
+                       		<div class="txt">
+                               <div class="title">Оставайтесь на связи</div>
+                               <p>Подпишитесь на рассылку новостей</p>
+                           </div>
+                           <div class="form-block requisites">
+                                <form action="" method="post">
+                                    <img src="img/ico/mail.png" alt=""/>
+                                    <input placeholder="Ваш e-mail" type="email" class="input-form" >
+                                    <button class="btn"><span>ОК</span></button>
+                                </form>
+                            </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="container">
+               <div class="top flex">
+                   <div class="left-block">
+                       <div class="title">МЕНЮ</div>
+                       <ul>
+                           <li><a href="#">О нас </a></li>
+                           <li><a href="#">Bounty</a></li>
+                           <li><a href="#">FAQ</a></li>
+                           <li><a href="#">Контакты</a></li>
+                       </ul>
+                   </div>
+                   <div class="right-block">
+                       <div class="title">КОНТАКТЫ</div>
+                       <div class="flex">
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/phone.png" alt=""/></div>
+                               <a href="tel:+ 99 123 222111">+ 99 123 222111</a>
+                           </div>
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/e-mal.png" alt=""/></div>
+                               <a href="mailto:info@mezzway.com ">info@mezzway.com </a>
+                           </div>
+                           <div class="flex"> 
+                               <div class="img"><img src="img/ico/adres.png" alt=""/></div>
+                               <p>12 Trevor Square, Knightsbridge<br/>SW7 1DT, London, United Kingdom</p>
+                           </div>
+                       </div>
+                   </div>
+               </div><!--top-->
+               <div class="bottom flex">
+                   <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                   <div class="copyright">©2018 Mezzway. All rights reserved</div>
+               </div>
+           </div>
+		</footer>
+       
+       <div class="modal hidden" data-id="#login">
+            <div class="modal-ov"></div>
+            <div class="modal-content modal-form">
+                <span class="close"></span>
+                <div class="flex">
+                    <div class="img"><img src="img/3.jpg" alt=""/></div>
+                    <div class="right-block">
+                        <div class="form-block">
+                        	<a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                            <form action="" method="post">
+                                <div class="title">
+                                    <h2>Войдите в свой аккаунт</h2>
+                                </div>
+                                <input placeholder="Логин или e-mail" type="text" name="log-mail" class="input-form" required>
+                                <input placeholder="Пароль" type="password" name="password" class="input-form" required>
+                                <button class="btn">Войти</button>
+                            </form>
+                            <div class="bottom-txt">
+                            	<p><span>Забыли пароль?</span> <a href="#">Восстановить</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal hidden" data-id="#registration">
+            <div class="modal-ov"></div>
+            <div class="modal-content modal-form">
+                <span class="close"></span>
+                <div class="flex">
+                    <div class="img"><img src="img/3.jpg" alt=""/></div>
+                    <div class="right-block">
+                        <div class="form-block">
+                        	<a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                            <form action="" method="post">
+                                <div class="title">
+                                    <h2>Регистрация</h2>
+                                </div>
+                                <div class="item-2">
+                                    <input placeholder="Ваш логин:*" type="text" name="name" class="input-form item" required>
+                                    <input placeholder="E-mail:*" type="email" name="email" class="input-form item" required>
+                                </div>
+                                <div class="item-2">
+                                    <input placeholder="Пароль:*" type="password" name="password" class="input-form item" required>
+                                    <input placeholder="Повторите пароль:*" type="password" name="password-repeat" class="input-form item" required>
+                                </div>
+                                <input placeholder="Вас пригласил:" type="text" name="text" class="input-form item item-1" required>
+                                <button class="btn">Зарегистрироваться</button>
+                            </form>
+                            <div class="bottom-txt">
+                            	<p><span>Забыли пароль?</span> <a href="#">Восстановить</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <script type="text/javascript" src="js/modernizr.js"></script> 
+	   <script type="text/javascript" src="js/header-bg.js"></script>
+       <script type="text/javascript" src="animate/aos.js"></script>
+	   <script type="text/javascript" src="js/main.js"></script>  
+        
+	</body>
+</html>

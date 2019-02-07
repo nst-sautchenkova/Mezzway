@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>Mezzway</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"> 
+       
+    <link rel="stylesheet" type="text/css" href="animate/aos.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    
+    <link rel="icon" href="/favicon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    
+    <script type="text/javascript" src="js/jquery.js"></script>
+</head>
+	<body>
+       <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <div id="nav-pages">
+            <a href="index.html">1</a>
+            <a href="about.html">2</a>
+            <a href="bounty.html">3</a>
+            <a href="contacts.html">4</a>
+            <a href="faq.html">5</a>
+            <a href="a-index.html">6</a>
+            <a href="a-history.html">7</a>
+            <a href="a-banner.html">8</a>
+            <a href="a-open-deposits.html">9</a>
+            <a href="a-referal.html">10</a>
+            <a href="a-settings.html">11</a>
+            <a href="a-withdraw.html">12</a>
+        </div>
+        <style>
+			#nav-pages{
+				position: fixed;
+				height: 100vh;
+				z-index: 9999;
+				background: rgba(255,255,255,0.5);
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: center;
+				overflow-y: auto;
+				padding: 0 5px 5px;
+			}
+			#nav-pages a{
+				text-decoration: none;
+				color: #fff;
+				display: block;
+				padding: 5px;
+				background: rgba(0, 0, 0, 0.4);
+				text-align: center;
+				width: 30px;
+				margin-top: 5px;
+			}
+			#nav-pages a:hover{
+				background: rgba(0, 0, 0, 0.8);
+			}
+		</style>
+        <!--------------------------------------->
+        <!--------------------------------------->
+        <!--  NAV PAGES                        -->
+        <!--------------------------------------->
+        <!--------------------------------------->
+       <div id="loader">
+            <div id="cube-loader">
+                <div class="caption">
+                  <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
+                 </div>
+              </div>
+           </div>
+        </div><!--/Loader-->
+        
+        <div id="admin-page">
+            <div id="wrapper">
+                <header>
+                    <div id="particles-background" class="vertical-centered-box"></div>
+                    <div id="particles-foreground" class="vertical-centered-box"></div>
+                    <div class="container">
+                        <div class="top flex">
+                            <div class="left-block flex">
+                                <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                                <div class="language">
+                                    <a href="#" ><img src="img/en.png" alt=""/></a>
+                                    <a href="#" class="active"><img src="img/ru.png" alt=""/></a>    
+                                </div><!--/language-->
+                            </div>
+                            <div class="right-block flex">
+                                <ul class="social-networks">
+                                    <li><a href="#"><img src="img/social/facebook.png" alt="facebook"/></a></li>
+                                    <li><a href="#"><img src="img/social/telegram.png" alt="telegram"/></a></li>
+                                    <li><a href="#"><img src="img/social/twitter.png" alt="twitter"/></a></li>
+                                    <li><a href="#"><img src="img/social/vk.png" alt="vk"/></a></li>
+                                    <li><a href="#"><img src="img/social/skype.png" alt="skype"/></a></li>
+                                </ul>
+                                <div class="register-login">
+                                    <a href="#" id="logout" class="btn btn-2 modal-block"><span>Выйти</span></a>
+                                </div><!--/register-login-->
+                            </div>
+                        </div><!--/top-->
+                    </div><!--/container-->
+                    <div class="middle">
+                        <div class="container flex">
+                            <nav class="nav">
+                                <a class="cd-nav-trigger scale">
+                                    <div class="hamburger-menu menu-toggle">
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                        <div class="bar"></div>
+                                    </div>
+                                </a>
+                                <div class="menu">
+                                    <ul class="sliding-menu">
+                                        <li class="active"><a href="#"><img src="img/admin/menu-icons/deposit.svg" alt=""/>Открыть депозит</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/withdraw.svg" alt=""/>Вывести средства</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/history.svg" alt=""/>История</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/partners.svg" alt=""/>Партнеры</a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/baners.svg" alt=""/>Банеры </a></li>
+                                        <li><a href="#"><img src="img/admin/menu-icons/settings.svg" alt=""/>Настройки</a></li>
+                                    </ul>
+                                </div>
+                            </nav> 
+                        </div><!--/container-->
+                    </div><!--/middle-->
+                </header>
+                
+                <section id="calculator" class="admin">
+                    <div class="container">
+                        <div class="flex align-top">
+                            <div class="balance-account">
+                                <div class="box-shadow"></div>
+                                <div class="bg">
+                                    <div class="title">Баллансы Счетов</div>
+                                    <div class="balance-block-all">
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-btc.png" alt=""/></div>
+                                                    <div class="title">Bitcoin</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-advcash.png" alt=""/></div>
+                                                    <div class="title">AdvCash</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-eth.png" alt=""/></div>
+                                                    <div class="title">Ethereum</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-ltc.png" alt=""/></div>
+                                                    <div class="title">Litecoin</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-payer.png" alt=""/></div>
+                                                    <div class="title">Payer</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                        <div class="item">
+                                            <div class="top flex">
+                                                <div class="flex">
+                                                    <div class="img"><img src="img/admin/crypto-logo/logo-pm.png" alt=""/></div>
+                                                    <div class="title">P. Money</div>
+                                                </div>
+                                                <div class="number">0.0000000000 BTC</div>
+                                            </div>
+                                            <div class="bottom">
+                                                <div class="flex">
+                                                    <div class="title">Инвестировано: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                                <div class="flex">
+                                                    <div class="title">Выведено: </div>
+                                                    <div class="number">0.0000000000 BTC</div>
+                                                </div>
+                                            </div>
+                                        </div><!--/item-->
+                                    </div>
+                                </div>
+                            </div><!--balance-account-->
+                            <div class="right-block">
+                                <div class="title filter">
+                                    <ul>
+                                        <li class="active"><a href="#">Открыть депозит</a></li>
+                                        <li><a href="#">Реинвестировать</a></li>
+                                    </ul>
+                                </div>
+                                <div id="calculator-block">
+                                    <ul class="c-tab" data-aos-delay="200" data-aos-once="true" data-aos="fade-right">
+                                        <li id="c-tab-1" class="active">
+                                            <div class="flex">
+                                                <p><span class="number">10%</span><span>за 24 часа</span></p>
+                                                <ul>
+                                                    <li>Начисления каждый час</li>
+                                                    <li>Депозит включен</li>
+                                                    <li>1$-500$</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li id="c-tab-2">
+                                            <div class="flex">
+                                                <p><span class="number">30%</span><span>за 48 часа</span></p>
+                                                <ul>
+                                                    <li>Начисления каждую минуту</li>
+                                                    <li>Депозит включен</li>
+                                                    <li>1000$-5000$</li>
+                                                </ul>
+                                            </div>
+                                       </li>
+                                       <li id="c-tab-3">
+                                            <div class="flex">
+                                                <p><span class="number">50%</span><span>за 72 часа</span></p>
+                                                <ul>
+                                                    <li>Начисления каждую секунду</li>
+                                                    <li>Депозит включен</li>
+                                                    <li>2500-20000$</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="content" data-aos="fade-left" data-aos-delay="400" data-aos-once="true">
+                                        <div id="dep-block">
+                                            <div class="b-selectblock">
+                                                <div id="selectblock" class="selectblock">  
+                                                    <div class="title">Платежная система:</div>                            
+                                                    <div id="selectBox" class="selectBox">
+                                                        <img src="img/admin/arrow.png" alt="" class=arrow />
+                                                        <p class="valueTag" name="select"><span></span></p>
+                                                        <ul id="selectMenuBox" class="selectMenuBox">
+                                                            <li class="option ico-advcash" id="advcash">Advcash</li>
+                                                            <li class="option ico-btc" id="btc">btc</li>
+                                                            <li class="option ico-ltc" id="ltc">ltc</li>
+                                                            <li class="option ico-eth" id="eth">eth</li>
+                                                            <li class="option ico-PM" id="pm">pm</li>
+                                                            <li class="option ico-payer" id="payer">payer</li>
+                                                        </ul>
+                                                    </div><!-- selectBox -->
+                                                </div>
+                                                <script>
+                                                    (function( $ ) {
+                                                      $.fn.selectbox = function() {
+                                                        var selectDefaultHeight = $('#selectBox').height();
+                                                        var rotateDefault = "rotate(0deg)";
+                                                            $('#selectBox > p.valueTag').click(function() {
+                                                              var currentHeight = $('#selectBox').height();
+                                                              if (currentHeight < 100 || currentHeight == selectDefaultHeight) {
+                                                                  $('#selectBox').height("250px");
+                                                                  $('img.arrow').css({borderRadius: "1000px", transition: ".2s", transform: "rotate(180deg)"});
+                                                              }
+                                                              if (currentHeight >= 250) {
+                                                                $('#selectBox').height(selectDefaultHeight);
+                                                                $('img.arrow').css({transform: rotateDefault});
+                                                              }
+                                                          });
+                                                          
+                                                          $('li.option').click(function() {
+                                                            $('#dep-block').removeClass();
+                                                            $('#selectblock').removeClass();
+                                                            $('#selectBox').height(selectDefaultHeight);
+                                                            $('img.arrow').css({transform: rotateDefault});
+                                                            $('p.valueTag span').text($(this).text());
+                                                            
+                                                            var cla=$(this).attr( 'id' );
+                                                            
+                                                            $('#dep-block').addClass(cla);
+                                                            $('#selectblock').addClass(cla);
+															
+														   // кнопка ОТКРЫТЬ ДЕПОЗИТ
+															var depclass = $('#dep-block').attr( 'class' );
+															if((depclass == 'advcash') || (depclass == 'pm') || (depclass == 'payer')){
+																$('#dep-block .btn-3').attr('id', 'perfectmoney-advcash-payer');
+															}else {
+																$('#dep-block .btn-3').attr('id', 'bitcoin-ethereum-litecoin');
+															}
+	
+                                                          });
+                                                      };
+                                                    })( jQuery );
+                                                    $('selector').selectbox();
+                                                </script>
+                                            </div>
+                                            
+                                            <div class="dposit-amount"> 
+                                                <span>Сумма депозита:</span>
+                                                <span class="dposit-amount-ps">BTC</span>
+                                                <input type="text" class="input-form"  placeholder="0.00000000"/> 
+                                            </div> 
+                                            
+                                            <button class="btn-3 modal-block" id="bitcoin-ethereum-litecoin">ОТКРЫТЬ ДЕПОЗИТ</button>  
+                                        </div>
+                                    </div><!--/content-->
+                                </div><!--/calculator-block-->
+                            </div>
+                        </div>
+                    </div><!--container-->
+                </section>
+            </div> 
+              
+            <footer>
+               <div class="container">
+                   <div class="bottom flex">
+                       <a href="#" class="logo"><img src="img/logo.svg" alt="Mezzway"/></a>
+                       <div class="copyright">©2018 Mezzway. All rights reserved</div>
+                   </div>
+               </div>
+            </footer>
+       </div><!--#admin-page-->     
+       
+       <script>
+        
+
+
+
+                                       
+	   </script>
+       <div class="modal hidden deposit-modal" data-id="#bitcoin-ethereum-litecoin">
+            <div class="modal-ov"></div>
+            <div class="modal-content">
+                <span class="close"></span>
+                <div class="body-mod">
+                    <div class="title">ПОДТВЕРДИТЕ ОПЛАТУ</div>
+                    <p>Платеж будет зачислен после трех подтверждений в сети</p>
+                    <div class="input-block">     
+                        <div class="title">Сумма:</div>
+                        <span>16 333,66 USD</span> 
+                    </div> 
+                    <div class="input-block">     
+                         <div class="title">Платежная система:</div>
+                         <span><img src="img/admin/crypto-logo/logo-btc.png" alt=""/>Bitcoin</span>
+                    </div> 
+                    <div class="input-block">     
+                        <div class="title">Время создания:</div>
+                        <span>12:30</span>
+                    </div>
+                    <div class="purse">     
+                        <div class="title">Необходим перевод на кошелек</div>
+                        <span>k273jas038fjsk273jas038fjs</span>
+                    </div>  
+                    <a href="#" class="btn">Я ОПЛАТИЛ</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal hidden deposit-modal" data-id="#perfectmoney-advcash-payer">
+            <div class="modal-ov"></div>
+            <div class="modal-content">
+                <span class="close"></span>
+                <div class="body-mod">
+                    <div class="title">ПОДТВЕРДИТЕ ОПЛАТУ</div>
+                    <p>Платеж будет зачислен после трех подтверждений в сети</p>
+                    <div class="input-block">     
+                        <div class="title">Сумма:</div>
+                        <span>16 333,66 USD</span> 
+                    </div> 
+                    <div class="input-block">     
+                         <div class="title">Платежная система:</div>
+                         <span><img src="img/admin/crypto-logo/logo-pm.png" alt=""/>P.Money</span>
+                    </div> 
+                    <div class="input-block">     
+                        <div class="title">Время создания:</div>
+                        <span>12:30</span>
+                    </div>
+                    <a href="#" class="btn">ПЕРЕЙТИ К ОПЛАТЕ</a>
+                </div>
+            </div>
+        </div>
+
+       <script type="text/javascript" src="js/modernizr.js"></script> 
+	   <script type="text/javascript" src="js/header-bg.js"></script>
+       <script type="text/javascript" src="animate/aos.js"></script>
+	   <script type="text/javascript" src="js/main.js"></script>  
+	</body>
+</html>
