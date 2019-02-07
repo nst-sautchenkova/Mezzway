@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="11px" height="14px" viewBox="0 0 11 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>baners</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0395BD" offset="0%"></stop>
+            <stop stop-color="#01DCBD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="menu/banners" transform="translate(-3.000000, -1.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-6" transform="translate(3.000000, 1.000000)">
+                <path d="M0.015540275,13.112609 C0.015540275,13.4657721 0.228840864,13.7857367 0.554911591,13.9203458 C0.663308448,13.9649312 0.776958743,13.9867701 0.88972888,13.9867701 C1.11700196,13.9867701 1.34080943,13.8975992 1.50776424,13.7306444 L5.26058939,9.97781925 L9.01341454,13.7306444 C9.18036935,13.8975992 9.40417682,13.9867701 9.6314499,13.9867701 C9.74422004,13.9867701 9.85787033,13.9649037 9.96538703,13.9203458 C10.2923379,13.7857367 10.5056385,13.4657721 10.5056385,13.112609 L10.5056385,2.62251081 L0.015540275,2.62251081 L0.015540275,13.112609 Z" id="Shape"></path>
+                <path d="M9.6314499,0 L0.889701375,0 C0.407182711,0 0.015540275,0.391642436 0.015540275,0.8741611 L0.015540275,1.7483222 L10.5056385,1.7483222 L10.5056385,0.8741611 C10.5056385,0.391642436 10.1139961,0 9.6314499,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

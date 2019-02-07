@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>history</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#0395BD" offset="0%"></stop>
+            <stop stop-color="#01DCBD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.9">
+        <g id="menu/history" transform="translate(-1.000000, -1.000000)" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <g id="Group-2" transform="translate(1.000000, 1.000000)">
+                <path d="M7.35,0.0205882353 C4.9,0.0205882353 2.73,1.35058824 1.61,3.38058824 L0,1.77058824 L0,6.32058824 L4.55,6.32058824 L2.59,4.36058824 C3.5,2.61058824 5.25,1.42058824 7.35,1.42058824 C10.22,1.42058824 12.6,3.80058824 12.6,6.67058824 C12.6,9.54058824 10.22,11.9205882 7.35,11.9205882 C5.04,11.9205882 3.15,10.4505882 2.38,8.42058824 L0.91,8.42058824 C1.68,11.2205882 4.27,13.3205882 7.35,13.3205882 C11.06,13.3205882 14,10.3105882 14,6.67058824 C14,3.03058824 10.99,0.0205882353 7.35,0.0205882353 Z M6.3,3.52058824 L6.3,7.09058824 L9.59,9.05058824 L10.15,8.14058824 L7.35,6.46058824 L7.35,3.52058824 L6.3,3.52058824 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

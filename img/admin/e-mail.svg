@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>ico/e-mail</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="0%" id="linearGradient-1">
+            <stop stop-color="#0395BD" offset="0%"></stop>
+            <stop stop-color="#01DCBD" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ico/e-mail" fill="url(#linearGradient-1)" fill-rule="nonzero">
+            <path d="M60,44.449147 C60,45.7438074 59.6282907,46.9440186 59.0328352,48 L40,27.1371869 L58.8264818,11 C59.5588436,12.1386244 60,13.4761278 60,14.9214688 L60,44.449147 Z M30.4988511,31 L56,8.91477137 C54.9535317,8.34773761 53.7751211,8 52.5039518,8 L8.4937504,8 C7.2210089,8 6.04223549,8.34773761 5,8.91477137 L30.4988511,31 Z M37.1444597,30.0002405 L31.2126896,35.1396272 C30.8657208,35.4387252 30.4336807,35.5880938 30.0000608,35.5880938 C29.5661978,35.5880938 29.1341577,35.4387252 28.7871888,35.1396272 L22.8540819,30 L4,50.8780517 C5.13010982,51.5796753 6.45454652,52 7.88690208,52 L52.1130979,52 C53.5452104,52 54.8702548,51.5796753 56,50.8780517 L37.1444597,30.0002405 Z M2.17386875,11 C1.44156748,12.138617 1,13.4761115 1,14.9215648 L1,44.4491704 C1,45.7438223 1.37000224,46.9440256 1.96774594,48 L21,27.1336728 L2.17386875,11 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
